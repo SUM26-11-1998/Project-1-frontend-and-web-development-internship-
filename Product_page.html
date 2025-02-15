@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        /* Reset some default browser styles */
+        body, h1, p, ul, li, img, button {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            border: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        header nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav ul li {
+            margin: 0 1em;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 2em;
+            background-color: #fff;
+            margin: 2em;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-image img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .product-details {
+            max-width: 500px;
+            margin-left: 2em;
+        }
+
+        .product-details h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+
+        .product-details .rating {
+            font-size: 1.2em;
+            color: #e67e22;
+            margin-bottom: 1em;
+        }
+
+        .product-details .description {
+            font-size: 1.2em;
+            margin-bottom: 1em;
+        }
+
+        .product-details .price {
+            font-size: 1.5em;
+            color: #e67e22;
+            margin-bottom: 1em;
+        }
+
+        .add-to-cart {
+            background-color: #e67e22;
+            color: #fff;
+            padding: 0.75em 1.5em;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-to-cart:hover {
+            background-color: #d35400;
+        }
+
+        .confirmation-message {
+            display: block;
+            color: green;
+            font-size: 1.2em;
+            margin-top: 1em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            .product-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .product-details {
+                margin-left: 0;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="product-container">
+            <div class="product-image">
+                <img src="1.png" alt="Product Image">
+            </div>
+            <div class="product-details">
+                <h1> Ajanta Shoes </h1>
+                <div class="rating">
+                    <span class="filled">&#9733;</span>
+                    <span class="filled">&#9733;</span>
+                    <span class="filled">&#9733;</span>
+                    <span class="filled">&#9733;</span>
+                    <span>&#9734;</span>
+                </div>
+                <p class="description">Impakto Dragonfly Men's Stylish and Comfortable with Lace-Up Closure and Casual Wear</p>
+                <p class="price">RS.1,699</p>
+                <button class="add-to-cart">Add to Cart</button>
+               
+            </div>
+        </div>
+
+        <!-- Add more products here -->
+        <div class="product-container">
+            <div class="product-image">
+                <img src="2.png" alt="Product Image" width="400" height="300">
+            </div>
+            <div class="product-details">
+                <h1>U.S. POLO ASSN. Mens Stefan Sneaker</h1>
+                <div class="rating">
+                    <span class="filled">&#9733;</span>
+                    <span class="filled">&#9733;</span>
+                    <span class="filled">&#9733;</span>
+                    <span>&#9733;</span>
+                    <span>&#9734;</span>
+                </div>
+                <p class="description">Highly slip-resistant; made for most surfaces. Flexible and comfortable; can be used both indoors & outdoors.US Polo Stylish Fashion Sneakers.</p>
+                <p class="price">RS.2,199</p>
+                <button class="add-to-cart">Add to Cart</button>
+              
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 E-commerce Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
